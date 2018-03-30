@@ -39,7 +39,7 @@ class Song
     # else
     #   self.find_by_name (song_name)
     # end
-    self.create_by_name(song_name) unless find_by_name(song_name)
+    self.create_by_name(song_name) unless self.find_by_name(song_name)
   end
 
   def self.alphabetical
